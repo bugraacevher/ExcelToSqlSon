@@ -1,0 +1,25 @@
+﻿CREATE TABLE [dbo].[demo] (
+    [DemoId]             NVARCHAR (15) NOT NULL,
+    [TARİH]              NVARCHAR (15) NOT NULL,
+    [STOKKODU]           NVARCHAR (MAX) NOT NULL,
+    [STOKADI]            NVARCHAR (MAX) NOT NULL,
+    [RENK]               NVARCHAR (5)  NOT NULL,
+    [BEDEN]              NVARCHAR (5)  NULL,
+    [BARKOD]             NVARCHAR (MAX) NOT NULL,
+    [FATURANO]           NVARCHAR (MAX) NOT NULL,
+    [MAĞAZAKODU]         NVARCHAR (MAX) NOT NULL,
+    [MAĞAZAADI]          NVARCHAR (MAX) NOT NULL,
+    [MİKTAR]             NVARCHAR (5)  NOT NULL,
+    [SATIŞSORUMLUSUKODU] NVARCHAR (MAX) NULL,
+    [SATIŞSORUMLUSUADI]  NVARCHAR (MAX) NULL,
+    [KDV]                NVARCHAR (25) NOT NULL,
+    [FİYAT]              NVARCHAR (25) NOT NULL,
+    [TUTAR]              NVARCHAR (25) NOT NULL,
+    [İSKONTO]            NVARCHAR (25) NOT NULL,
+    [NETBİRİMFİYAT]      NVARCHAR (25) NOT NULL,
+    [NETTUTAR]           NVARCHAR (25) NOT NULL,
+    [ÖDEMETİPİ]          NVARCHAR (MAX) NOT NULL,
+    [ÖDEMEAÇIKLAMASI]    NVARCHAR (MAX) NOT NULL,
+    CONSTRAINT [PK_Demos] PRIMARY KEY CLUSTERED ([DemoId] ASC)
+);
+
